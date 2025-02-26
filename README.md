@@ -24,9 +24,6 @@ Ensure you have the following installed:
    ```
 
 3. Set up the `.env` file:
-   ```sh
-   cp .env.example .env
-   ```
    Fill in the required environment variables in the `.env` file:
    ```env
    MONGO_URI=mongodb://localhost:27017/image-processing
@@ -93,14 +90,3 @@ Expected console log:
 ```sh
 Webhook received: { requestId: '1698765432109', status: 'completed' }
 ```
-
-## Additional Commands
-- **View Logs**: `npm run logs`
-- **Stop Server**: `Ctrl + C`
-
-## Troubleshooting
-- If Redis is not running: `brew services restart redis`
-- If MongoDB connection fails: Verify `MONGO_URI` in `.env` and restart MongoDB.
-
-## License
-This project is licensed under the MIT License.
